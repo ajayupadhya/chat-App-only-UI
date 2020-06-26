@@ -6,7 +6,7 @@ const Chat = () => {
   const {
     state: { data, chats },
   } = useContext(Context);
-  console.log(data);
+
   return (
     <div className="chats">
       {data.map((c, i) => {

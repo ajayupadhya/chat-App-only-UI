@@ -18,7 +18,7 @@ const Reply = () => {
         onChange={(e) => addMessage(e.target.value)}
       />
       <button onClick={sendReply}>
-        <img src={save} id="send" />
+        <img src={save} id="send" alt = "logo" />
       </button>
     </div>
   );

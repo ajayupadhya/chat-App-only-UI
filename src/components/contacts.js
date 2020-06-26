@@ -1,5 +1,4 @@
 import React from "react";
-import im1 from "../images/profiles/ben.png";
 import MainHeader from "./mainHeader";
 import Searchbar from "./searchbar";
 import { Context } from "../context/chatContext";
@@ -16,10 +15,10 @@ const Contacts = () => {
       <div className="m">
         <div className="Contacts">
           <ul className="ullist">
-            {contacts.map((c) => {
+            {contacts.map((c , i) => {
               return (
                 <button className = "btn" onClick = {() => tochat(c.conversation) }>
-                  <li className="list">
+                  <li className="list" key ={i}>
                     <img
                       id="photo1"
                       src={require("../images/profiles/" + c.name + ".png")}
