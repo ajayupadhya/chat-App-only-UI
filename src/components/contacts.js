@@ -17,8 +17,8 @@ const Contacts = () => {
           <ul className="ullist">
             {contacts.map((c , i) => {
               return (
-                <button className = "btn" onClick = {() => tochat(c.conversation) }>
-                  <li className="list" key ={i}>
+                <button className = "btn" onClick = {() => tochat(c.conversation) } key ={i}>
+                  <li className="list" >
                     <img
                       id="photo1"
                       src={require("../images/profiles/" + c.name + ".png")}
